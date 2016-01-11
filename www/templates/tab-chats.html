@@ -1,0 +1,20 @@
+<ion-view view-title="รายชื่อชุมนุม">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+     <span class={{chat.clublogo}}></span>
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.excerpt}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-calm color_facebook">
+      Check in <span class="slide_to_share ion ion-android-pin"></span>
+        </ion-option-button>
+        <ion-option-button class="button-calm color_twitter">
+      Tweet <span class="slide_to_share ion ion-social-twitter"></span>
+        </ion-option-button>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

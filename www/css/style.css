@@ -5,12 +5,12 @@
 .slide_to_share { margin-left: 10px;}
 
 .clubcover { text-align:center; }
-.club-story { font-weight: 200; font-size: 30px; color:#333; }
+.club-story { font-weight: 200; font-size: 30px; color:#fff; }
 
 .suanon_exhibition_title {
     font-family: "Kanit", "Helvetica Neue", sans-serif;
    font-size: 40px;
-    color:#333;
+    color:#fff;
     font-weight: 100;
     text-align: center;
     margin-top:20vh!important;
@@ -18,7 +18,7 @@
   .suanon_exhibition_subtitle {
     font-family: "Kanit", "Helvetica Neue", sans-serif;
    font-size: 18px;
-    color:#333;
+    color:#fff;
     font-weight: 200;
     text-align: center;
 
@@ -28,17 +28,29 @@
 
   .welcomehr{
     width: 70%;
-    color: #333;
+    color: #fff;
    }
 
   .home_topic {     font-family: "Kanit", "Helvetica Neue", sans-serif;
                               font-size: 20px;
                               font-weight: 200;
-                              color:333;
+                              color:#fff;
 }
 
-.history {      padding-left: 5vh; color:#333;    padding-right: 5vh;   margin-top: 200px; }
-.history > p { color:#666; }
-.timetable {      padding-left: 5vh; color:#333;   padding-right: 5vh;    margin-top: 20px; }
+.history {      padding-left: 5vh; color:#fff;    padding-right: 5vh;   margin-top: 200px; }
+.history > p { color:#fafafa; }
+.timetable {      padding-left: 5vh; color:#fff;   padding-right: 5vh;    margin-top: 20px; }
 .table_time { font-weight: 500; }
 .table_event { font-weight: 200; }
+
+
+.welcome_page {
+
+    background-color: #2e4558;
+    background-position: center ;
+    background-size: cover;
+    background-attachment: scroll!important;
+    background-repeat: no-repeat;
+    background-image: url(../img/wallpaper.jpg);
+
+}

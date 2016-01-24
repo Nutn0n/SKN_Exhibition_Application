@@ -170,7 +170,7 @@
       </dict>
     </array>
     <key>UIStatusBarHidden</key>
-    <true/>
+    <false/>
     <key>UIStatusBarStyle</key>
     <string>UIStatusBarStyleLightContent</string>
   </dict>

@@ -17,6 +17,26 @@
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
 
+    <!--- Facebook SDK --->
+
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '635401669931273',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
@@ -29,7 +49,7 @@
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
   </head>
-  <body ng-app="starter" class="platform-ios platform-cordova platform-webview">
+  <body ng-app="starter">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->

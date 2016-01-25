@@ -39,7 +39,7 @@
 
 .topic_icon { color:#666; font-size: 18px; }
 
-.history {      padding-left: 5vh; color:#333;    padding-right: 5vh;   padding-top: 120px; }
+.history {      padding-left: 5vh; color:#333;    padding-right: 5vh;   padding-top: 50px; }
 .history > p { color:#666; }
 .timetable {      padding-left: 5vh; color:#333;   padding-right: 5vh;    margin-top: 20px; }
 .table_time { font-weight: 500; }
@@ -68,11 +68,94 @@
 
 .info_box {
 
-  -webkit-backdrop-filter:blur(1px);
-  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 22%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 22%,rgba(255,255,255,1) 38%,rgba(255,255,255,1) 100%);
-  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 22%,rgba(255,255,255,1) 38%,rgba(255,255,255,1) 100%);
+  background-color: #fff;
+}
 
-  padding-bottom: 40vh;
+.code_enter {
+  width:100%;
+  font-size:22px!important;
+  text-align: center;
+  background: #fff;
+  height: 70px!important;
+  font-weight:200;
+}
 
+.code_button {
+  text-align: center;
+  width: 100%;
+  line-height: 40px;
+  border: none;
+  background-color: #3A70F8;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
+  color:#fff;
+}
+
+.dashboard {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    color:#333;
+    text-align: center;
+    font-weight:200;
+}
+
+.dashboard-check {
+
+    color:#333;
+        font-family: 'Kanit', sans-serif;
+        text-align: center;
+
+}
+
+.visitednumber {
+
+  color:#333;
+  text-align: center;
+  font-weight: 200;
+  z-index: 200;
+ margin-left: 40%;
+ margin-right: 40%;
+  border-radius: 360px;
+  margin-top: 50px;
+  padding: 5px 15px 5px;
+  box-shadow: 0 0 0 1px #333;
+
+}
+
+.visitednumber_share_facebook {
+    height:35px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  background-color:#19A5D1;
+  border-left: 50px ;
+  border-right: 50px ;
+  border-color: transparent;
+  color:#fff;
+  font-size: 18px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+}
+
+.visitednumber_share_twitter {
+  height:35px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  background-color: #D02C80;
+  border-left: 50px ;
+  border-right: 50px ;
+  border-color: transparent;
+  color:#fff;
+  font-size: 18px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+}
+
+.tellfriend {
+  font-weight: 300;
+  font-family: 'Kanit', sans-serif;
+  color:#666;
+  text-align: center;
 }

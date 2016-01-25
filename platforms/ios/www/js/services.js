@@ -7,7 +7,8 @@ angular.module('starter.services', [])
     name: 'คอมพิวเตอร์และหุ่นยนต์',
     excerpt: 'การแสดงความสามารถของหุ่นยนต์ และ การเขียนโปรแกรม',
     clublogo:'ion-social-apple',
-    coverimg:'img/cover0.png'
+    coverimg:'img/cover0.png',
+    promo:'computer'
   },
 
   {
@@ -16,7 +17,8 @@ angular.module('starter.services', [])
     excerpt: 'ของที่ระลึกและกิจกรรมร่วมสนุก',
     clublogo:'ion-ios-body',
     clubid:'ก000',
-    coverimg:'img/cover1.png'
+    coverimg:'img/cover1.png',
+    promo:'cheer'
   },
 
   {
@@ -25,7 +27,8 @@ angular.module('starter.services', [])
     excerpt: 'ของที่ระลึกจากทีมลูกเสือสวนกุหลาบนนท์',
     clublogo:'ion-ios-flame',
     clubid:'ก000',
-    coverimg:'img/cover2.png'
+    coverimg:'img/cover2.png',
+    promo:'scout'
   },
 
   {
@@ -34,7 +37,8 @@ angular.module('starter.services', [])
     excerpt: 'วาดภาพเหมือนและลุ้นของรางวัล',
     clublogo:'ion-ios-compose',
     clubid:'ก000',
-    coverimg:'img/cover3.png'
+    coverimg:'img/cover3.png',
+    promo:'art'
   },
 
    {
@@ -43,7 +47,8 @@ angular.module('starter.services', [])
     excerpt: 'กิจกรรมการแข่งขันตอบคำถามเพื่อชิงรางวัล',
     clublogo:'ion-ios-people',
     clubid:'ก000',
-    coverimg:'img/cover4.png'
+    coverimg:'img/cover4.png',
+    promo:'cousil'
   },
 
   {
@@ -52,7 +57,8 @@ angular.module('starter.services', [])
    excerpt: 'กิจกรรม และเกมส์ต่างๆ',
    clublogo:'ion-ios-chatboxes',
    clubid:'ก000',
-   coverimg:'img/cover4.png'
+   coverimg:'img/cover4.png',
+  promo:'cartoon'
  }
 
 ];

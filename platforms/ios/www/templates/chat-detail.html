@@ -20,9 +20,9 @@
               <h5 style="color:#fafafa; font-family: 'Kanit', sans-serif; font-weight:300; padding-bottom:15px; " > <span class="ion-ios-pricetags"></span> รหัสชุมนุม {{chat.clubid}} </h4>
       </div>
 
-      <input class="code_enter" placeholder="Enter code here" type="text"></input>
+      <input class="code_enter" ng-model="codeenter" placeholder="Enter code here" type="text"></input>
 
-    <button class="code_button" ng-click="">ลงชื่อเยี่ยมชม</button>
+    <button class="code_button" ng-click="promocheck(codeenter,chat.promo,chat.name);">ลงชื่อเยี่ยมชม</button>
 
     <h1 class="club-story padding">เรื่องราวของชุมนุม</h1>
     <p class="padding">

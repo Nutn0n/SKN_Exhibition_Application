@@ -22,11 +22,12 @@
 
       <input class="code_enter" ng-model="codeenter" placeholder="Enter code here" type="text"></input>
 
-    <button class="code_button" ng-click="promocheck(codeenter,chat.promo,chat.name);">ลงชื่อเยี่ยมชม</button>
+    <button class="code_button" ng-click="promocheck(codeenter,chat.promo,chat.name);          $storage.ClubThatYouHaveVisited = $storage.ClubThatYouHaveVisited+1;
+">ลงชื่อเยี่ยมชม</button>
 
     <h1 class="club-story padding">เรื่องราวของชุมนุม</h1>
     <p class="padding">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 
       <h1 class="club-story padding">กิจกรรม</h1>
       <p class="padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

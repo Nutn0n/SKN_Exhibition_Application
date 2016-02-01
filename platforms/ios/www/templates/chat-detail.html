@@ -5,6 +5,7 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{chat.name}}">
+
   <ion-content>
       <div style="   background-size:     cover;
     background-position: center center;  text-align:center; background-image:  linear-gradient(
@@ -22,8 +23,7 @@
 
       <input class="code_enter" ng-model="codeenter" placeholder="Enter code here" type="text"></input>
 
-    <button class="code_button" ng-click="promocheck(codeenter,chat.promo,chat.name);          $storage.ClubThatYouHaveVisited = $storage.ClubThatYouHaveVisited+1;
-">ลงชื่อเยี่ยมชม</button>
+    <button class="code_button" ng-controller="ChatDetailCtrl" ng-click="promocheck(codeenter,chat.promo,chat.name);$storage.ClubThatYouHaveVisited = $storage.ClubThatYouHaveVisited+1;">ลงชื่อเยี่ยมชม</button>
 
     <h1 class="club-story padding">เรื่องราวของชุมนุม</h1>
     <p class="padding">

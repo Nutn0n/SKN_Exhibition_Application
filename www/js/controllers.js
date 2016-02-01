@@ -3,7 +3,7 @@ angular.module('starter.controllers', ['ngStorage'])
 
 .controller('DashCtrl', function($scope) {})
 
-
+//  ------------------------------------ //
 
 .controller('ChatsCtrl', function($scope, Chats) {
 
@@ -22,27 +22,29 @@ angular.module('starter.controllers', ['ngStorage'])
 
 })
 
-//
+//  ------------------------------------ //
+
+
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats, $localStorage) {
 
     $scope.chat = Chats.get($stateParams.chatId);
 
-    // init club visited
+    // init club visited inside local storage
     $scope.$storage = $localStorage.$default({
       ClubThatYouHaveVisited: 0
     });
 
+
       // check function
-      $scope.promocheck = function(codeenter,promo,name){
+      $scope.promocheck = function(codeenter, promo, name){
           if(codeenter==promo){
 
-             //alert('ยินดีด้วย คุณได้ลงชื่อเข้าชมชุมนุม '+name+' เรียบร้อยแล้ว');
-
              swal('ยินดีด้วย', 'คุณได้ลงชื่อเข้าชมชุมนุม '+name+' เรียบร้อยแล้ว', 'success');
+            // $storage.ClubThatYouHaveVisited = $storage.ClubThatYouHaveVisited+1;
 
             }
             else{
-              //alert('เสียใจด้วย คุณกรอกรหัสผิด กรุณาตรวจสอบใหม่อีกครั้ง');
+
               sweetAlert("เสียใจด้วย", "คุณกรอกรหัสผิด กรุณาตรวจสอบใหม่อีกครั้ง", "error");
 
 
@@ -52,7 +54,15 @@ angular.module('starter.controllers', ['ngStorage'])
 
 })
 
+//  ------------------------------------ //
+
 .controller('AccountCtrl', function($scope) {
+  $scope.settings = {
+    enableFriends: true
+  };
+});
+
+ontroller('IgCtrl', function($scope) {
   $scope.settings = {
     enableFriends: true
   };

@@ -36,9 +36,12 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <feature name="InAppBrowser">
+    <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
     <plugin name="InAppBrowser" value="CDVInAppBrowser" />
     <preference name="webviewbounce" value="false" />
-    <preference name="UIWebViewBounce" value="false" />
+    <preference name="UIWebViewBounce" value="true" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="none" />

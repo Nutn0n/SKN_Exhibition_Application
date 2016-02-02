@@ -1,12 +1,38 @@
 <ion-view hide-nav-bar="true">
+    <div style="position:fixed; z-index:99999; background-color:rgba(255,255,255,0.8); -webkit-backdrop-filter:blur(3px); width:100%; "><br/></div>
 
   <ion-content class="welcome_page">
-
     <!--- Developer debug : Reset all Var, Storage, Pram, Object  --->
 
-    <h1 class="suanon_exhibition_title">    <img  class="suannon_logo" ng-src="img/suankularb_minimal.png"><br/>สวนนนท์ปริทรรศน์</h1>
+    <h1 class="suanon_exhibition_title">
+
+      <div id="container" class="container">
+
+        <ul id="scene" class="scene">
+          <li class="layer" data-depth="1.00">
+            <img class="suannon_logo"  ng-src="img/suankularb_minimal.png">
+          </li>
+        </ul>
+
+      </div>
+
+    <!---<img  class="suannon_logo" ng-src="img/suankularb_minimal.png">-->
+    สวนนนท์ปริทรรศน์
+
+    </h1>
+
     <h2 class="suanon_exhibition_subtitle">ป ร ะ จำ ปี ก า ร ศึ ก ษ า  2 5 5 8</h2>
     <hr class="welcomehr">
+
+
+    <script>
+
+  	// Parallax
+  	var scene = document.getElementById('scene');
+  	var parallax = new Parallax(scene);
+
+  	</script>
+
 
     <!-- remove when release full version-->
     <!---<h6 class="credits">BETA</h6>--->
@@ -15,8 +41,14 @@
     <br/><br/>
     <h4 class="dashboard">ชุมนุมที่เยี่ยมชม</h4>
     <div>
-    <h1 class="visitednumber" ng-controller="ChatDetailCtrl">{{$storage.ClubThatYouHaveVisited}}</h1>
 
+      <div ng-controller="ChatDetailCtrl" ng-if=" $storage.ClubThatYouHaveVisited != 0 ">
+    <h1 class="visitednumber" >{{$storage.ClubThatYouHaveVisited}}</h1>
+      </div>
+
+      <div ng-controller="ChatDetailCtrl" ng-if=" $storage.ClubThatYouHaveVisited == 0 ">
+    <h1 class="visitednumber_null" >0</h1>
+      </div>
 
     <h5 class="dashboard-check">ชุมนุมที่เยี่ยมชม</h5>
     <h5 class="tellfriend">บอกเพื่อนผ่าน</h5>

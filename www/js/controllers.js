@@ -41,7 +41,7 @@ angular.module('starter.controllers', ['ngStorage'])
 
              swal('ยินดีด้วย', 'คุณได้ลงชื่อเข้าชมชุมนุม '+name+' เรียบร้อยแล้ว', 'success');
             // $storage.ClubThatYouHaveVisited = $storage.ClubThatYouHaveVisited+1;
-
+    
             }
             else{
 

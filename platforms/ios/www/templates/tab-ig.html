@@ -1,5 +1,5 @@
 <ion-view hide-nav-bar="true">
-<ion-content style="overflow: scroll; background-color:#fafafa;">
+<ion-content style="overflow: scroll; background-color:#fff;">
 
 
   <section class="padding" style="position:relative; text-align:center;">
@@ -13,7 +13,24 @@
  </section>
 
 <div style="text-align:center;">
-<a style="overflow: scroll;" class="twitter-timeline" data-chrome="noheader nofooter noborders noscrollbar transparent" height="1800px;"  tweet-limit="20" href="https://twitter.com/search?q=%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%99%E0%B8%99%E0%B8%97%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%97%E0%B8%A3%E0%B8%A3%E0%B8%A8%E0%B8%99%E0%B9%8C%20exclude%3Anativeretweets%20exclude%3Aretweets" data-widget-id="694545605025107969"><span   style=" font-size:100px; color:#D6D6D6;" class="ion-ios-loop"></span></a>
+
+  <div id='timeline'></div>
+
+  <script>
+
+  twttr.widgets.createTimeline(
+  '694545605025107969',
+  document.getElementById('timeline'),
+  {
+    width: '450',
+    height: '700',
+    related: 'twitterdev,twitterapi'
+    }).then(function (el) {
+    console.log("Embedded a timeline.")
+  });
+
+  </script>
+
 </div>
 </ion-content>
 </ion-view>

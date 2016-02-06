@@ -5,12 +5,24 @@
 
       <br/><br/>
 
-      <ion-item class="item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}" >
+      <ion-item class="item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+     <span class={{chat.clublogo}}>
 
-     <span class={{chat.clublogo}}></span>
-        <h2 style="font-family: 'Kanit', sans-serif;">{{chat.name}}</h2>
-        <p>{{chat.excerpt}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
+       <span  style=" opacity:0.15;
+
+       display:block; margin-top:-60px; width:150%; height:150%; margin-left:-20%;
+       background-size:     cover;
+     background-position: center center;  background-image: url({{chat.coverimg}})
+
+       "></span>
+
+     </span>
+
+
+        <h2 style="font-family: 'Kanit', sans-serif; font-weight:200; font-size:20px; color:#000;">{{chat.name}}</h2>
+        <p style="z-index:9999; font-weight:300;">{{chat.excerpt}}</p>
+        <i style=" color:#555;" class="icon ion-chevron-right icon-accessory"></i>
+
 
         <ion-option-button class="button-calm color_facebook">
       Check in <span class="slide_to_share ion ion-android-pin"></span>
@@ -18,8 +30,10 @@
         <ion-option-button ng-click="tweet(chat.name)" class="button-calm color_twitter">
       Tweet <span class="slide_to_share ion ion-social-twitter"></span>
         </ion-option-button>
-    </div>
+
       </ion-item>
+
+
     </ion-list>
   </ion-content>
 </ion-view>

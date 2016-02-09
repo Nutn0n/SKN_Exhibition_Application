@@ -23,7 +23,7 @@
 
       <input class="code_enter" ng-model="codeenter" placeholder="Enter code here" type="text"></input>
 
-    <button class="code_button" ng-controller="ChatDetailCtrl" ng-click="promocheck(codeenter,chat.promo,chat.name);$storage.ClubThatYouHaveVisited = $storage.ClubThatYouHaveVisited+1;">ลงชื่อเยี่ยมชม</button>
+    <button class="code_button" ng-controller="ChatDetailCtrl" ng-click="$storage.ClubThatYouHaveVisited = $storage.ClubThatYouHaveVisited+ promocheck(codeenter,chat.promo,chat.name); ">ลงชื่อเยี่ยมชม</button>
 
 
 

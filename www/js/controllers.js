@@ -38,16 +38,14 @@ angular.module('starter.controllers', ['ngStorage'])
       // check function
       $scope.promocheck = function(codeenter, promo, name){
           if(codeenter==promo){
-
              swal('ยินดีด้วย', 'คุณได้ลงชื่อเข้าชมชุมนุม '+name+' เรียบร้อยแล้ว', 'success');
-            // $storage.ClubThatYouHaveVisited = $storage.ClubThatYouHaveVisited+1;
-    
+            return 1;
+            console.log('True');
             }
             else{
-
               sweetAlert("เสียใจด้วย", "คุณกรอกรหัสผิด กรุณาตรวจสอบใหม่อีกครั้ง", "error");
-
-
+              return 0;
+              console.log('False');
             }
       }
 

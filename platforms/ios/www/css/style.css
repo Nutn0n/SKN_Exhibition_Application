@@ -23,7 +23,7 @@
   .suanon_exhibition_subtitle {
     font-family: "Kanit", "Helvetica Neue", sans-serif;
    font-size: 18px;
-    color:#333;
+    color:#666;
     font-weight: 200;
     text-align: center;
 
@@ -46,11 +46,11 @@
     color:#333;
 }
 
-.topic_icon { color:#666; font-size: 18px; }
+.topic_icon { color:#d6d6d6; font-size: 18px; }
 
-.history {      padding-left: 5vh; color:#333;    padding-right: 5vh;   padding-top: 50px; }
-.history > p { color:#666; }
-.timetable {      padding-left: 5vh; color:#333;   padding-right: 5vh;    margin-top: 20px; }
+.history {      padding-left: 5vh; color:#fff;    padding-right: 5vh;   padding-top: 50px; }
+.history > p { color:#D6D6D6; }
+.timetable {      padding-left: 5vh; color:#fff;   padding-right: 5vh;    margin-top: 20px; }
 .table_time { font-weight: 500; }
 .table_event { font-weight: 200; }
 
@@ -66,21 +66,21 @@
 
 .welcome_page {
 
-    background-color: #fff;
+    background-color: #487baf;
     background-position: center ;
     background-size: cover;
-    background-attachment: scroll!important;
     background-repeat: no-repeat;
     background-image: url(../img/wallpaper.jpg);
 
 }
 
 .info_box {
-  background-color: #fff;
+  background-color: #487baf;
   padding-bottom:40vh;
 }
 
 .code_enter {
+
 
   width:100%;
   font-size:21px!important;
@@ -90,6 +90,7 @@
   font-weight:200;
 
 }
+
 
 
 .code_button {
@@ -141,7 +142,7 @@
 
 .visitednumber {
 
-  background-color: #00B863;
+  background-color: #0085CF;
   color:#fff;
   text-align: center;
   font-weight: 200;
@@ -190,7 +191,7 @@
 
   font-weight: 300;
   font-family: 'Kanit', sans-serif;
-  color:#666;
+  color:#333;
   text-align: center;
 
 }

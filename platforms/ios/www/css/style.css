@@ -80,15 +80,26 @@
 
 .club_search {
 
-  width: 100%;
-  font-size: 18px;
+  width:80%;
+  font-size: 18px!important;
+  height: 20px;
   text-align: center;
-  border: none;
-  margin-bottom: 3px;
+  padding-bottom:0px;
   font-family: "Ionicons",'Kanit',sans-serif;
   font-weight:200;
-  color:#333;
+  color:#333!important;
+  background-color: #fafafa;
+  border-radius: 7px;
+  margin-bottom:7px;
+
+  left:10%;
+
 }
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #555!important;
+}
+
 
 .welcome_page {
 

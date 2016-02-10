@@ -1,6 +1,16 @@
 <ion-view hide-nav-bar="true">
   <div style="position:fixed; z-index:99999; background-color:#fff; width:100%; "><br/>
-          <input class="club_search" ng-model="search.name" placeholder='&#xf4a5 ค้นหาชุมนุม'>
+        <input class="club_search item item-input" type="search" ng-model="search.name" ng-focus="focused = true" ng-blur="focused = false" placeholder='&#xf4a5 ค้นหาชุมนุม'>
+            <button class="cancle_search"
+            ng-click="search.name=''; cordova.plugins.Keyboard.close()"
+            style=" display:inline-block; position:fixed; margin-top:-35px; z-index:999; border:none; right:0; background-color:rgba(0,0,0,0); font-size:16px; color:#fff; "
+            >  Done </button>
+
+            <style ng-if="focused">
+              .cancle_search { color:#0085cf!important ; }
+            </style>
+
+
   </div>
   <ion-content style="margin-top:55px;">
     <ion-list>
@@ -40,7 +50,7 @@
         </ion-option-button>
 
       </ion-item>
-      
+
     </ion-list>
   </ion-content>
 </ion-view>

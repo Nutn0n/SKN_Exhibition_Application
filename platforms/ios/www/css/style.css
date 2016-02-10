@@ -84,13 +84,13 @@
   font-size: 17px!important;
   height: 24px!important;
   text-align: center;
-  padding-bottom:0px;
+  padding-bottom:1px!important;
+  margin-top: 3px;
   font-family: "Ionicons",'Kanit',sans-serif;
   font-weight:200;
   color:#333!important;
   background-color: #fafafa;
   border-radius: 7px;
-  margin-bottom:7px;
 
   left:10%;
 

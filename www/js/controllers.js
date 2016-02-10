@@ -5,19 +5,19 @@ angular.module('starter.controllers', ['ngStorage'])
 
 //  ------------------------------------ //
 
-.controller('ChatsCtrl', function($scope, Chats) {
+.controller('clubsCtrl', function($scope, clubs) {
 
 
   // twitter status update
   $scope.tweet = function(name) {
-    window.location="https://twitter.com/intent/tweet?text=ฉันได้เยี่ยมชมชุมนุม "+name+ " ในงานสวนนท์ปริทรรศน์ ปีการศึกษา 2558 โหลด Application เที่ยวชมงานได้ที่ skn.ac.th/exhibition";
+    window.location.href="https://twitter.com/intent/tweet?text=ฉันได้เยี่ยมชมชุมนุม "+name+ " ในงานสวนนท์ปริทรรศน์ ปีการศึกษา 2558 โหลด Application เที่ยวชมงานได้ที่ skn.ac.th/exhibition";
   }
 
 
-  // hide chat
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
+  // hide club
+  $scope.clubs = clubs.all();
+  $scope.remove = function(club) {
+    clubs.remove(club);
   };
 
 })
@@ -25,9 +25,9 @@ angular.module('starter.controllers', ['ngStorage'])
 //  ------------------------------------ //
 
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats, $localStorage) {
+.controller('clubDetailCtrl', function($scope, $stateParams, clubs, $localStorage) {
 
-    $scope.chat = Chats.get($stateParams.chatId);
+    $scope.club = clubs.get($stateParams.clubId);
 
     // init club visited inside local storage
     $scope.$storage = $localStorage.$default({

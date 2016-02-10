@@ -6519,7 +6519,10 @@ button.item.item-button-right {
     font-size: 33px;
     width: 100%;
     height: 100%;
-    border-radius: 50%; }
+    border-radius: 50%;
+    z-index:-99!important;
+    color:#fff;
+  }
 
 .item-avatar-right,
 .item-avatar-right .item-content {

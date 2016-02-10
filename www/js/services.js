@@ -1,8 +1,8 @@
 angular.module('starter.services', [])
 
-.factory('Chats', function() {
+.factory('clubs', function() {
 
-  var chats = [
+  var clubs = [
     {
     id: 1,
 
@@ -92,15 +92,15 @@ angular.module('starter.services', [])
 
   return {
     all: function() {
-      return chats;
+      return clubs;
     },
-    remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
+    remove: function(club) {
+      clubs.splice(clubs.indexOf(club), 1);
     },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
+    get: function(clubId) {
+      for (var i = 0; i < clubs.length; i++) {
+        if (clubs[i].id === parseInt(clubId)) {
+          return clubs[i];
         }
       }
       return null;

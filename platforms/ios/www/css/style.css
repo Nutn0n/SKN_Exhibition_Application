@@ -1,4 +1,17 @@
-/* Empty. Add your own CSS if you like */
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    width: auto;
+    height: 100vh;
+    z-index:-20;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
 
 .color_facebook { background-color:#435B9F!important; }
 .color_twitter { background-color: #39A9F1!important; }

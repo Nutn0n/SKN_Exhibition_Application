@@ -1,15 +1,19 @@
 <ion-view hide-nav-bar="true">
-  <div style="position:fixed; z-index:99999; background-color:rgba(255,255,255,0.8); -webkit-backdrop-filter:blur(4px); width:100%; ">
-        <br/>
+  <div style="position:fixed; z-index:99999; background-color:#fff; width:100%; "><br/>
+          <input class="club_search" ng-model="search.name" placeholder='&#xf4a5 ค้นหาชุมนุม'>
   </div>
-  <ion-content>
+  <ion-content style="margin-top:55px;">
     <ion-list>
+      <ion-item class="item-avatar item-icon-right"
+      ng-repeat="club in clubs | filter:search "
+      type="item-text-wrap"
+      href="#/tab/clubs/{{club.id}}">
 
-      <br/>
-      <ion-item class="item-avatar item-icon-right" ng-repeat="club in clubs" type="item-text-wrap" href="#/tab/clubs/{{club.id}}">
      <span class={{club.clublogo}}>
 
        <div  style=" opacity:1.0;
+
+
 
        display:block; margin-top:-60px; width:150%; height:150%; margin-left:-20%;
        background-size:     cover;
@@ -36,8 +40,7 @@
         </ion-option-button>
 
       </ion-item>
-
-
+      
     </ion-list>
   </ion-content>
 </ion-view>

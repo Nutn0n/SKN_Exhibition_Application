@@ -77,6 +77,19 @@
 
 }
 
+
+.club_search {
+
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  margin-bottom: 3px;
+  font-family: "Ionicons",'Kanit',sans-serif;
+  font-weight:200;
+  color:#333;
+}
+
 .welcome_page {
 
     background-color: #fff;

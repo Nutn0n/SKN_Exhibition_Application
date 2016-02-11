@@ -10,6 +10,12 @@
               .cancle_search { color:#0085cf!important ; }
             </style>
 
+            <div ng-if="search.name.length>0">
+             <script>
+               $ionicScrollDelegate.scrollTop(); // still bug! not working.
+             </script>
+            </div>
+
 
   </div>
   <ion-content style="margin-top:55px;">

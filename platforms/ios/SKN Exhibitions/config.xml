@@ -31,15 +31,11 @@
     <description>
         Application for SKN Exhibitions - Designed by @Nutn0n.
     </description>
-    <author email="title409@.com" href="http://nutn0n.com">
+    <author email="title409@icloud.com" href="http://nutn0n.com">
       Nattanon Dungsunenarn
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <feature name="InAppBrowser">
-    <param name="ios-package" value="CDVInAppBrowser" />
-    </feature>
-    <plugin name="InAppBrowser" value="CDVInAppBrowser" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="true" />
     <preference name="DisallowOverscroll" value="true" />

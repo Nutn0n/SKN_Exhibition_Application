@@ -1,0 +1,233 @@
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    width: auto;
+    height: 100vh;
+    z-index:-20;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+
+.color_facebook { background-color:#435B9F!important; }
+.color_twitter { background-color: #39A9F1!important; }
+.slide_to_share { margin-left: 10px;}
+
+.clubcover { text-align:center; }
+.club-story { font-weight: 200; font-size: 30px; color:#333;     font-family: "Kanit", "Helvetica Neue", sans-serif;  }
+
+.club_info { font-size:16px!important; line-height: 25px; font-weight: 300;
+  padding-left: 20px; padding-right: 20px; color:#999; }
+
+  .padding { padding-left: 20px; padding-right: 20px;  }
+
+.suanon_exhibition_title {
+    font-family: "Kanit", "Helvetica Neue", sans-serif;
+   font-size: 38px;
+    color:#333;
+    font-weight: 200;
+    text-align: center;
+    margin-top:20vh!important;
+  }
+  .suanon_exhibition_subtitle {
+    font-family: "Kanit", "Helvetica Neue", sans-serif;
+   font-size: 18px;
+    color:#666;
+    font-weight: 200;
+    text-align: center;
+
+  }
+
+  .suannon_logo { width: 50px; height: 50px; text-align: center;   position: relative; }
+
+  .welcomehr{
+
+    width: 70%;
+    color: #666;
+
+   }
+
+  .home_topic {
+
+    font-family: "Kanit", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color:#333;
+}
+
+.topic_icon { color:#d6d6d6; font-size: 18px; }
+
+.history {      padding-left: 5vh; color:#fff;    padding-right: 5vh;   padding-top: 50px; }
+.history > p { color:#D6D6D6; }
+.timetable {      padding-left: 5vh; color:#fff;   padding-right: 5vh;    margin-top: 20px; }
+.table_time { font-weight: 500; }
+.table_event { font-weight: 200; }
+
+.credits {
+
+  text-align: center;
+  font-size:13px;
+  font-weight:400;
+  color:#FF9000;
+
+}
+
+
+.club_search {
+
+  width:80%;
+  font-size: 17px!important;
+  height: 24px!important;
+  text-align: center;
+  padding-bottom:1px!important;
+  margin-top: 3px;
+  font-family: "Ionicons",'Kanit',sans-serif;
+  font-weight:200;
+  color:#333!important;
+  background-color: #fafafa;
+  border-radius: 7px;
+
+  left:10%;
+
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #555!important;
+}
+
+
+.welcome_page {
+
+    background-color: #fff;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/background.gif);
+
+}
+
+.info_box {
+  background-color: #487baf;
+  padding-bottom:40vh;
+}
+
+.code_enter {
+
+
+  width:100%;
+  font-size:21px!important;
+  text-align: center;
+  background: #fff;
+  height: 60px!important;
+  font-weight:200;
+
+}
+
+
+
+.code_button {
+
+  text-align: center;
+  width: 100%;
+  line-height: 40px;
+  border: none;
+  background-color: #0085CF;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
+  color:#fff;
+
+}
+
+.dashboard {
+
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    color:#333;
+    text-align: center;
+    font-weight:200;
+
+}
+
+.dashboard-check {
+
+    color:#333;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+
+}
+
+.visitednumber_null {
+
+  color:#333;
+  text-align: center;
+  font-weight: 200;
+  z-index: 200;
+ margin-left: 40%;
+ margin-right: 40%;
+  border-radius: 360px;
+  margin-top: 50px;
+  padding: 5px 15px 5px;
+  box-shadow: 0 0 0 1px #333;
+
+}
+
+.visitednumber {
+
+  background-color: #0085CF;
+  color:#fff;
+  text-align: center;
+  font-weight: 200;
+  z-index: 200;
+ margin-left: 40%;
+ margin-right: 40%;
+  border-radius: 360px;
+  margin-top: 50px;
+  padding: 5px 15px 5px;
+
+}
+
+.visitednumber_share_facebook {
+    height:35px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  background-color:#19A5D1;
+  border-left: 50px ;
+  border-right: 50px ;
+  border-color: transparent;
+  color:#fff;
+  font-size: 18px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+}
+
+.visitednumber_share_twitter {
+
+  height:35px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  background-color: #D02C80;
+  border-left: 50px ;
+  border-right: 50px ;
+  border-color: transparent;
+  color:#fff;
+  font-size: 18px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+
+}
+
+.tellfriend {
+
+  font-weight: 300;
+  font-family: 'Kanit', sans-serif;
+  color:#333;
+  text-align: center;
+
+}

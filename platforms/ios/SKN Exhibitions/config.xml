@@ -2,7 +2,7 @@
 <widget id="com.ionicframework.desktop819020" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
-    <preference name="DisallowOverscroll" value="true" />
+    <preference name="DisallowOverscroll" value="false" />
     <preference name="EnableViewportScale" value="false" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
@@ -27,17 +27,17 @@
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="IonicKeyboard" />
     </feature>
-    <name>SKN Exhibitions</name>
+    <name>SKN Ex</name>
     <description>
-        Application for SKN Exhibitions - Designed by @Nutn0n.
+        SKN Exhibition application -  Designed by @Nutn0n
     </description>
-    <author email="title409@icloud.com" href="http://nutn0n.com">
+    <author email="title409@icloud.com" href="http://www.nutn0n.com">
       Nattanon Dungsunenarn
     </author>
     <content src="index.html" />
-    <access origin="*" />
+    <access origin="* " />
     <preference name="webviewbounce" value="false" />
-    <preference name="UIWebViewBounce" value="true" />
+    <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="none" />

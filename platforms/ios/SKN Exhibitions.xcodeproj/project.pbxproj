@@ -476,10 +476,10 @@
 					"-weak-lSystem",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ionicframework.sknexhibition;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nutn0n.sknex2015;
 				PRODUCT_NAME = "SKN Exhibitions";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -509,10 +509,10 @@
 					"-weak-lSystem",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ionicframework.sknexhibition;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nutn0n.sknex2015;
 				PRODUCT_NAME = "SKN Exhibitions";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

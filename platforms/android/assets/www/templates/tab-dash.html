@@ -1,0 +1,40 @@
+<ion-view hide-nav-bar="true">
+
+  <ion-content class="welcome_page">
+
+<!--
+<video autoplay loop muted id="background">
+    <source src="img/wallpaper.mp4" type="video/mp4">
+</video> -->
+
+    <h1 class="suanon_exhibition_title">
+      <img  class="suannon_logo" ng-src="img/suankularb_minimal.png"><br/>
+    สวนนนท์ปริทรรศน์
+
+    </h1>
+
+    <h2 class="suanon_exhibition_subtitle">ป ร ะ จำ ปี ก า ร ศึ ก ษ า  2 5 5 8</h2>
+    <hr class="welcomehr">
+
+    <!-- remove when release full version-->
+    <!---<h6 class="credits">BETA</h6>--->
+    <!--- remove when release full version -->
+
+    <br/><br/>
+    <h4 class="dashboard">ชุมนุมที่ฉันเยี่ยมชม</h4>
+    <div>
+
+      <div ng-controller="clubDetailCtrl" ng-if=" $storage.ClubThatYouHaveVisited != 0 ">
+    <h1 class="visitednumber" >{{$storage.ClubThatYouHaveVisited}}</h1>
+      </div>
+
+      <div ng-controller="clubDetailCtrl" ng-if=" $storage.ClubThatYouHaveVisited == 0 ">
+    <h1 class="visitednumber_null" >0</h1>
+      </div>
+
+    <h5 class="dashboard-check">ยังเหลืออีก 0 ชุมนุม</h5>
+    <h5 class="tellfriend">บอกเพื่อนผ่าน</h5>
+    <br/>
+    </div>
+  </ion-content>
+</ion-view>

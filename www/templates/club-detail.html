@@ -21,7 +21,7 @@
               <h5 style="color:#fafafa; font-family: 'Kanit', sans-serif; font-weight:300; padding-bottom:15px; " > <span class="ion-ios-pricetags"></span> รหัสชุมนุม {{club.clubid}} </h4>
       </div>
 
-      <input class="code_enter" ng-model="codeenter" placeholder="Enter code here" type="text"></input>
+      <input class="code_enter" ng-model="codeenter" placeholder="Enter code here"  style="text-transform:uppercase" type="text"></input>
 
     <button class="code_button" ng-controller="clubDetailCtrl" ng-click="$storage.ClubThatYouHaveVisited = $storage.ClubThatYouHaveVisited+ promocheck(codeenter,club.promo,club.name); ">ลงชื่อเยี่ยมชม</button>
 
@@ -43,6 +43,7 @@
       <h1 class="club-story padding">กิจกรรม</h1>
       <p class="club_info padding">{{club.activity}}
     </p>
+
 
   </ion-content>
 </ion-view>

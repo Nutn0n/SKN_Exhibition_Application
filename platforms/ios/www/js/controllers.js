@@ -5,6 +5,8 @@ angular.module('starter.controllers', ['ngStorage'])
 
 //  ------------------------------------ //
 
+
+
 .controller('clubsCtrl', function($scope, clubs) {
 
 
@@ -35,9 +37,10 @@ angular.module('starter.controllers', ['ngStorage'])
     });
 
 
+
       // check function
       $scope.promocheck = function(codeenter, promo, name){
-          if(codeenter==promo){
+          if( codeenter.toUpperCase() == promo || codeenter == promo ){
              swal('ยินดีด้วย', 'คุณได้ลงชื่อเข้าชมชุมนุม '+name+' เรียบร้อยแล้ว', 'success');
             return 1;
             console.log('True');
